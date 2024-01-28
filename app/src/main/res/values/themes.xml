@@ -1,0 +1,29 @@
+<resources xmlns:tools="http://schemas.android.com/tools" xmlns:name="http://schemas.android.com/apk/res/android">
+    <!-- Base application theme. -->
+    <style name="Theme.Notes" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/status_color</item>
+        <item name="android:windowSplashScreenBackground" tools:targetApi="s">@color/white</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="ActionbarTitle">
+        <item name="fontFamily">@font/inter_medium</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="BodyText" >
+        <item name="android:letterSpacing">0.022</item>
+        <item name="fontFamily">@font/inter</item>
+        <item name="android:textColor">@color/bodyText</item>
+
+    </style>
+</resources>

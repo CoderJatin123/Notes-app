@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".notepad"
+    android:paddingLeft="18dp"
+    android:paddingRight="18dp"
+    android:background="@color/background"
+    >
+
+    <TextView
+        android:id="@+id/AppbarTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My Notes"
+        style="@style/ActionbarTitle"
+        android:textColor="@color/title"
+        android:layout_marginTop="30dp"
+        android:paddingBottom="10dp"
+        />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/card"
+        android:backgroundTint="@color/card_blue"
+        android:padding="10dp">
+
+        <TextView
+
+            android:id="@+id/date_pad"
+            style="@style/BodyText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:padding="8dp"
+            android:text="Monday 12,Jan"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+
+
+        android:layout_marginTop="24dp"
+        android:padding="10dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/card"
+        android:backgroundTint="@color/padcolor">
+
+        <EditText
+
+            android:id="@+id/title_pad"
+            style="@style/BodyText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@android:color/transparent"
+            android:hint="Title"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:padding="8dp"
+            android:textSize="20sp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginLeft="8dp"
+            android:background="@color/bodyText"
+            android:alpha="0.6"/>
+
+        <EditText
+
+            android:id="@+id/descripition_pad"
+            style="@style/BodyText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            android:gravity="start"
+            android:hint="Descripition"
+            android:lineSpacingExtra="4sp"
+            android:minLines="8"
+            android:padding="8dp"
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>
